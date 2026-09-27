@@ -2,25 +2,25 @@
 
 :root {
   /* Environment */
-  --verge-background: #050505;
-  --verge-surface: #0A0A0A;
+  --verge-background: #030F0B;
+  --verge-surface: #061711;
   
   /* Structure */
-  --verge-border: #263A36;
-  --verge-grid: rgba(38, 58, 54, 0.4);
+  --verge-border: #0A2B20;
+  --verge-grid: rgba(10, 43, 32, 0.4);
   
   /* Information (Text) */
-  --verge-text: #F5F7F6;
-  --verge-text-secondary: #A7B0B0;
-  --verge-mint: #DDFCEF;
+  --verge-text: #FFFFFF;
+  --verge-text-secondary: #8B9E96;
+  --verge-mint: #50FFB2;
   
-  /* Intelligence & Action (Turquoise) */
-  --verge-accent: #00D9A6;
-  --verge-accent-soft: #00BFA5;
+  /* Intelligence & Action */
+  --verge-accent: #50FFB2;
+  --verge-accent-soft: #00A388;
   
   /* Atmospheres & Glows */
-  --glow-primary: rgba(0, 217, 166, 0.15);
-  --glow-secondary: rgba(0, 191, 165, 0.10);
+  --glow-primary: rgba(80, 255, 178, 0.15);
+  --glow-secondary: rgba(0, 163, 136, 0.10);
 }
 
 html {
@@ -277,10 +277,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   z-index: 0;
 }
 .bg-atmosphere-1 {
-  background: radial-gradient(circle at 50% 40%, rgba(0, 217, 166, 0.05), transparent 60%);
+  background: radial-gradient(circle at 50% 40%, rgba(80, 255, 178, 0.05), transparent 60%);
 }
 .bg-atmosphere-2 {
-  background: radial-gradient(circle at 80% 50%, rgba(0, 191, 165, 0.03), transparent 50%);
+  background: radial-gradient(circle at 80% 50%, rgba(0, 163, 136, 0.03), transparent 50%);
 }
 
 /* Layout Utilities */
