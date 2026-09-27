@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERGE | Digital Growth & Intelligence</title>
+    <meta name="description" content="VERGE combines strategy, brand, web, visibility and intelligent digital systems to help businesses compete in a world where customers increasingly discover businesses through search, platforms and AI-powered systems.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config for VERGE Visual System (Turquoise & Deep Black) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'verge-background': '#030F0B',
+                        'verge-surface': '#061711',
+                        'verge-border': '#0A2B20',
+                        'verge-text': '#FFFFFF',
+                        'verge-text-secondary': '#8B9E96',
+                        'verge-mint': '#50FFB2',
+                        'verge-accent': '#50FFB2',
+                        'verge-accent-soft': '#00A388',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'heading': ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "VERGE",
+      "description": "Digital growth and intelligence consultancy combining brand, web, and AI-ready visibility.",
+      "url": "https://vergedigital.com"
+    }
+    </script>
+</head>
+<body class="bg-verge-background text-verge-text font-sans antialiased selection:bg-verge-accent selection:text-black">
+
+    <!-- NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-verge-background/90 backdrop-blur-xl border-b border-verge-border transition-colors">
+        <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-heading font-bold text-2xl tracking-tight text-verge-text hover:text-verge-accent flex items-center gap-2 transition-colors">
+                VERGE
+                <span class="w-1.5 h-1.5 bg-verge-accent rounded-full shadow-[0_0_8px_rgba(0,217,166,0.3)]"></span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-verge-text-secondary">
+                <a href="#work" class="hover:text-verge-mint transition-colors">Work</a>
+                <a href="#services" class="hover:text-verge-mint transition-colors">Services</a>
+                <a href="#ordigit" class="hover:text-verge-mint transition-colors">ordigit</a>
+                <a href="#industries" class="hover:text-verge-mint transition-colors">Industries</a>
+                <a href="#about" class="hover:text-verge-mint transition-colors">About</a>
+                <a href="#scan" class="btn-primary text-xs tracking-widest uppercase">Run Free Scan</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-verge-text hover:text-verge-accent focus:outline-none transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-verge-surface border-b border-verge-border shadow-2xl shadow-black/50">
+            <div class="px-6 py-4 flex flex-col space-y-4 text-sm font-medium">
+                <a href="#work" class="text-verge-text hover:text-verge-accent">Work</a>
+                <a href="#services" class="text-verge-text hover:text-verge-accent">Services</a>
+                <a href="#ordigit" class="text-verge-text hover:text-verge-accent">ordigit</a>
+                <a href="#industries" class="text-verge-text hover:text-verge-accent">Industries</a>
+                <a href="#about" class="text-verge-text hover:text-verge-accent">About</a>
+                <a href="#scan" class="text-verge-accent font-bold">Run Free Scan</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="relative min-h-[95vh] flex items-center justify-center pt-20 overflow-hidden border-b-subtle bg-verge-background">
+            <div class="bg-atmosphere bg-atmosphere-1"></div>
+            
+            <!-- Structural Grid -->
+            <div class="absolute inset-0 z-0 bg-grid bg-[size:4rem_4rem] opacity-30"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <h1 class="heading-xl mb-6 text-verge-text-secondary">Build a business<br/>the digital world can<br/><span class="text-verge-text">understand, discover & trust.</span></h1>
+                    <p class="text-body-lg max-w-xl mb-10">
+                        VERGE brings brand, web, visibility and digital growth systems together so your business can communicate clearly, get discovered across modern digital channels, and turn attention into action.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                        <a href="#scan" class="btn-primary w-full sm:w-auto">Run a Free ordigit Scan</a>
+                        <a href="#services" class="btn-secondary w-full sm:w-auto">Explore What We Build</a>
+                    </div>
+                    <p class="mt-8 text-xs text-verge-text-secondary tracking-widest uppercase font-heading flex items-center gap-3">
+                        <span class="w-1 h-1 bg-verge-accent-soft rounded-full"></span>
+                        Brand. Web. Visibility. Growth.
+                    </p>
+                </div>
+                
+                <!-- Active Intelligence Visualization -->
+                <div class="relative h-[550px] w-full flex items-center justify-center reveal delay-200 group hidden md:flex">
+                    
+                    <!-- Background technical connections -->
+                    <div class="absolute w-full h-full pointer-events-none opacity-50">
+                        <div class="absolute top-[30%] left-[20%] w-[60%] h-[1px] bg-verge-border group-hover:bg-verge-accent-soft transition-colors">
+                             <div class="signal-pulse w-[30px] h-[1px] top-0 animate-float-h" style="animation-duration: 5s"></div>
+                        </div>
+                        <div class="absolute left-1/2 top-[15%] h-[70%] w-[1px] bg-verge-border group-hover:bg-verge-accent-soft transition-colors">
+                            <div class="signal-pulse h-[30px] w-[1px] left-0 animate-float-1" style="animation-duration: 6s"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Cards -->
+                    <div class="absolute top-[15%] left-[5%] animate-float-1">
+                        <div class="floating-card text-xs w-36 cursor-default">
+                            <div class="text-verge-text-secondary font-heading mb-1 uppercase tracking-widest text-[10px]">Website Clarity</div>
+                            <div class="data-indicator font-bold text-lg text-verge-accent">84%</div>
+                        </div>
+                    </div>
+
+                    <div class="absolute top-[25%] right-[10%] animate-float-2">
+                        <div class="floating-card text-xs w-36 cursor-default">
+                            <div class="text-verge-text-secondary font-heading mb-1 uppercase tracking-widest text-[10px]">AI Readiness</div>
+                            <div class="data-indicator font-bold text-lg text-verge-accent">73%</div>
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-[20%] left-[15%] animate-float-3">
+                        <div class="floating-card text-xs w-36 cursor-default">
+                            <div class="text-verge-text-secondary font-heading mb-1 uppercase tracking-widest text-[10px]">Trust Signal</div>
+                            <div class="data-indicator font-bold text-sm tracking-widest text-verge-accent">HIGH</div>
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-[10%] right-[15%] animate-float-1" style="animation-delay: 2s;">
+                        <div class="floating-card text-xs w-40 cursor-default">
+                            <div class="text-verge-text-secondary font-heading mb-1 uppercase tracking-widest text-[10px]">Customer Intent</div>
+                            <div class="data-indicator font-bold text-sm tracking-widest text-verge-accent">12 QUESTIONS</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Central Node -->
+                    <div class="relative z-10 floating-card bg-verge-surface border-verge-accent flex flex-col items-center justify-center p-6 cursor-default group/center shadow-[0_0_15px_rgba(0,217,166,0.1)] hover:shadow-[0_0_25px_rgba(0,217,166,0.16)] transition-all">
+                        <div class="absolute inset-0 bg-verge-accent opacity-[0.02] group-hover/center:opacity-[0.05] transition-opacity"></div>
+                        <div class="text-verge-text font-heading font-bold text-lg tracking-widest mb-1 relative z-10">YOUR BUSINESS</div>
+                        <div class="w-full h-[1px] bg-verge-accent opacity-30 mt-2 mb-2"></div>
+                        <div class="text-verge-accent text-[10px] uppercase tracking-widest flex items-center gap-1 opacity-0 group-hover/center:opacity-100 transition-opacity">
+                            <span class="w-1.5 h-1.5 bg-verge-accent rounded-full animate-pulse"></span> Signals Connected
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMMEDIATE PROBLEM STATEMENT -->
+        <section class="section-padding bg-verge-background border-b-subtle relative overflow-hidden">
+            <div class="bg-atmosphere bg-atmosphere-2"></div>
+            
+            <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+                <h2 class="heading-md mb-6 reveal text-verge-text">Your business doesn't have a visibility problem in just one place.</h2>
+                <p class="text-body-lg mb-16 reveal delay-100 text-verge-text-secondary">
+                    Customers may encounter your business through Google, Maps, social platforms, websites, recommendations, content and AI-powered discovery. If those signals are inconsistent, incomplete or difficult to understand, opportunities can disappear before a customer ever contacts you.
+                </p>
+                
+                <!-- Intelligence Journey Pipeline -->
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4 font-heading text-sm tracking-widest reveal delay-200 p-8 border border-verge-border bg-verge-surface rounded shadow-xl">
+                    <div class="text-verge-text-secondary hover:text-verge-mint transition-colors">UNDERSTOOD</div>
+                    <div class="hidden md:block text-verge-border">→</div>
+                    <div class="text-verge-text-secondary hover:text-verge-mint transition-colors">DISCOVERED</div>
+                    <div class="hidden md:block text-verge-border">→</div>
+                    <div class="text-verge-text-secondary hover:text-verge-mint transition-colors">TRUSTED</div>
+                    <div class="hidden md:block text-verge-border">→</div>
+                    <div class="text-verge-text-secondary hover:text-verge-mint transition-colors">CHOSEN</div>
+                    <div class="hidden md:block text-verge-accent shadow-[0_0_10px_rgba(0,217,166,0.15)]">→</div>
+                    <div class="text-verge-background font-bold bg-verge-accent px-6 py-3 rounded shadow-[0_0_15px_rgba(0,217,166,0.16)] transform hover:scale-105 transition-transform">
+                        CONTACTED
+                    </div>
+                </div>
+                
+                <p class="mt-8 text-verge-text-secondary text-sm font-medium reveal delay-300">
+                    VERGE helps businesses strengthen every stage of this journey.
+                </p>
+            </div>
+        </section>
+
+        <!-- FLAGSHIP INTELLIGENCE (ORDIGIT) -->
+        <section id="ordigit" class="section-padding bg-verge-background relative overflow-hidden">
+            <div class="bg-atmosphere bg-atmosphere-1"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="flex flex-col items-center text-center mb-16 reveal">
+                    <div class="flex items-center gap-2 mb-4 bg-verge-surface border border-verge-border px-3 py-1 rounded-full">
+                        <span class="w-1.5 h-1.5 bg-verge-accent shadow-[0_0_8px_rgba(0,217,166,0.3)]"></span>
+                        <span class="text-verge-accent text-[10px] tracking-widest font-bold uppercase">VERGE INTELLIGENCE SYSTEM</span>
+                    </div>
+                    <h2 class="heading-lg max-w-4xl text-verge-text">Before we build, let's understand what your business is saying.</h2>
+                    <p class="text-body-lg max-w-2xl mt-6">
+                        <strong class="text-verge-mint font-bold">ordigit</strong> investigates the public digital evidence surrounding your business and shows you how clearly your business is being understood, discovered and trusted.
+                    </p>
+                </div>
+                
+                <!-- Living Ordigit System Visualization -->
+                <div class="relative h-[400px] w-full flex items-center justify-center reveal delay-100 mb-20 hidden md:flex">
+                    <!-- Core Ordigit Module -->
+                    <div class="absolute z-20 floating-card bg-verge-surface border-verge-accent flex flex-col items-center justify-center p-8 w-64 h-64 rounded-full shadow-[0_0_30px_rgba(0,217,166,0.1)] hover:shadow-[0_0_40px_rgba(0,217,166,0.2)]">
+                        <div class="absolute inset-0 bg-verge-accent opacity-[0.02] rounded-full animate-pulse"></div>
+                        <h3 class="text-2xl font-heading font-bold text-verge-text tracking-widest mb-1">ordigit</h3>
+                        <div class="text-verge-accent text-[10px] uppercase tracking-widest">Intelligence Engine</div>
+                        
+                        <!-- connecting central dots -->
+                        <div class="w-1 h-1 bg-verge-accent absolute top-0 -translate-y-1/2"></div>
+                        <div class="w-1 h-1 bg-verge-accent absolute bottom-0 translate-y-1/2"></div>
+                        <div class="w-1 h-1 bg-verge-accent absolute left-0 -translate-x-1/2"></div>
+                        <div class="w-1 h-1 bg-verge-accent absolute right-0 translate-x-1/2"></div>
+                    </div>
+                    
+                    <!-- Orbiting Intelligence Cards -->
+                    <div class="absolute top-[5%] left-[20%] animate-float-1 floating-card text-xs">
+                        <div class="text-verge-text font-heading mb-1">BUSINESS IDENTITY</div>
+                    </div>
+                    <div class="absolute top-[10%] right-[25%] animate-float-2 floating-card text-xs">
+                        <div class="text-verge-text font-heading mb-1">AI DISCOVERY</div>
+                    </div>
+                    <div class="absolute bottom-[10%] left-[25%] animate-float-3 floating-card text-xs">
+                        <div class="text-verge-text font-heading mb-1">CUSTOMER INTENT</div>
+                    </div>
+                    <div class="absolute bottom-[5%] right-[20%] animate-float-h floating-card text-xs">
+                        <div class="text-verge-text font-heading mb-1">CONVERSION SIGNAL</div>
+                    </div>
+                    
+                    <!-- connecting lines from background -->
+                    <div class="absolute w-full h-[1px] bg-verge-border z-0 top-1/2 -translate-y-1/2"></div>
+                    <div class="absolute h-full w-[1px] bg-verge-border z-0 left-1/2 -translate-x-1/2"></div>
+                </div>
+
+                <div class="flex justify-center gap-4 mb-20 reveal delay-200">
+                    <a href="#scan" class="btn-primary">Investigate My Business Free</a>
+                    <a href="#ordigit-depth" class="btn-secondary">See How ordigit Works</a>
+                </div>
+
+                <!-- Customer Intent Visualization -->
+                <div class="mb-10 text-center reveal">
+                    <div class="text-verge-text-secondary text-xs uppercase tracking-widest font-heading mb-6">Customer Intent Analysis</div>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+                        <div class="floating-card text-center w-full md:w-auto cursor-default group border-verge-border hover:border-verge-accent">
+                            <div class="text-[10px] text-verge-text-secondary mb-1">STAGE</div>
+                            <div class="font-heading text-verge-text mb-2">DISCOVER</div>
+                            <div class="text-xs text-verge-accent opacity-0 group-hover:opacity-100 transition-opacity">Gap Identified</div>
+                        </div>
+                        <div class="text-verge-border hidden md:block">→</div>
+                        <div class="floating-card text-center w-full md:w-auto cursor-default group border-verge-border hover:border-verge-accent">
+                            <div class="text-[10px] text-verge-text-secondary mb-1">STAGE</div>
+                            <div class="font-heading text-verge-text mb-2">EVALUATE</div>
+                            <div class="text-xs text-verge-accent opacity-0 group-hover:opacity-100 transition-opacity">Evidence Found</div>
+                        </div>
+                        <div class="text-verge-border hidden md:block">→</div>
+                        <div class="floating-card text-center w-full md:w-auto cursor-default group border-verge-border hover:border-verge-accent">
+                            <div class="text-[10px] text-verge-text-secondary mb-1">STAGE</div>
+                            <div class="font-heading text-verge-text mb-2">COMPARE</div>
+                            <div class="text-xs text-verge-accent opacity-0 group-hover:opacity-100 transition-opacity">Authority Check</div>
+                        </div>
+                        <div class="text-verge-border hidden md:block">→</div>
+                        <div class="floating-card text-center w-full md:w-auto cursor-default group border-verge-accent shadow-[0_0_15px_rgba(0,217,166,0.1)]">
+                            <div class="text-[10px] text-verge-text-secondary mb-1">STAGE</div>
+                            <div class="font-heading text-verge-accent mb-2">TRUST</div>
+                            <div class="text-xs text-verge-text opacity-0 group-hover:opacity-100 transition-opacity">Strong Signal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES — WHAT VERGE BUILDS -->
+        <section id="services" class="section-padding bg-verge-background border-y border-verge-border relative">
+            <div class="absolute inset-0 z-0 bg-grid bg-[size:4rem_4rem] opacity-30 pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="mb-16 reveal flex flex-col md:flex-row md:items-end justify-between">
+                    <div>
+                        <h2 class="heading-lg mb-4 text-verge-text">From intelligence to implementation.</h2>
+                        <p class="text-body-lg max-w-2xl text-verge-text-secondary">
+                            Finding the problem is only the beginning. VERGE can help you build the digital foundation required to fix it.
+                        </p>
+                    </div>
+                    <!-- Small UI Fragment -->
+                    <div class="hidden md:flex items-center gap-2 border border-verge-border bg-verge-surface px-4 py-2 rounded-full mt-6 md:mt-0 shadow-lg">
+                         <div class="w-1.5 h-1.5 bg-verge-accent rounded-full animate-pulse"></div>
+                         <div class="text-[10px] text-verge-text-secondary font-heading uppercase tracking-widest">Systems Online</div>
+                    </div>
+                </div>
+
+                <!-- Visually Connected Services Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
+                    <!-- Background connection line for desktop -->
+                    <div class="hidden lg:block absolute top-[50%] left-[5%] right-[5%] h-[1px] bg-verge-border -z-10"></div>
+                    
+                    <!-- Service 01 -->
+                    <article class="card-module reveal delay-100 flex flex-col justify-between h-full group hover:border-verge-accent">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="text-xs text-verge-text-secondary tracking-widest font-heading uppercase">01</div>
+                                <div class="w-2 h-2 rounded-full bg-verge-border group-hover:bg-verge-accent group-hover:shadow-[0_0_8px_rgba(0,217,166,0.5)] transition-all"></div>
+                            </div>
+                            <h3 class="font-heading text-xl font-bold mb-4 text-verge-text">Brand & Identity</h3>
+                            <div class="service-text text-sm mb-6 leading-relaxed text-verge-text-secondary group-hover:text-verge-text">
+                                Identity systems, positioning, and visual language to build trust.
+                            </div>
+                            <div class="service-data-line mb-6"></div>
+                        </div>
+                        <div class="flex justify-end">
+                            <span class="text-xs font-heading text-verge-accent opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Explore →</span>
+                        </div>
+                    </article>
+
+                    <!-- Service 02 -->
+                    <article class="card-module reveal delay-200 flex flex-col justify-between h-full group hover:border-verge-accent">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="text-xs text-verge-text-secondary tracking-widest font-heading uppercase">02</div>
+                                <div class="w-2 h-2 rounded-full bg-verge-border group-hover:bg-verge-accent group-hover:shadow-[0_0_8px_rgba(0,217,166,0.5)] transition-all"></div>
+                            </div>
+                            <h3 class="font-heading text-xl font-bold mb-4 text-verge-text">Website & Digital Experience</h3>
+                            <div class="service-text text-sm mb-6 leading-relaxed text-verge-text-secondary group-hover:text-verge-text">
+                                High-performance business websites built to communicate and convert.
+                            </div>
+                            <div class="service-data-line mb-6"></div>
+                        </div>
+                        <div class="flex justify-end">
+                            <span class="text-xs font-heading text-verge-accent opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Explore →</span>
+                        </div>
+                    </article>
+
+                    <!-- Service 03 -->
+                    <article class="card-module reveal delay-300 flex flex-col justify-between h-full group hover:border-verge-accent">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="text-xs text-verge-text-secondary tracking-widest font-heading uppercase">03</div>
+                                <div class="w-2 h-2 rounded-full bg-verge-border group-hover:bg-verge-accent group-hover:shadow-[0_0_8px_rgba(0,217,166,0.5)] transition-all"></div>
+                            </div>
+                            <h3 class="font-heading text-xl font-bold mb-4 text-verge-text">AI-Ready Web & Visibility</h3>
+                            <div class="service-text text-sm mb-6 leading-relaxed text-verge-text-secondary group-hover:text-verge-text">
+                                Machine-readable architecture for modern search and AI discovery systems.
+                            </div>
+                            <div class="service-data-line mb-6"></div>
+                        </div>
+                        <div class="flex justify-end">
+                            <span class="text-xs font-heading text-verge-accent opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Explore →</span>
+                        </div>
+                    </article>
+
+                    <!-- Service 04 -->
+                    <article class="card-module reveal delay-100 flex flex-col justify-between h-full group hover:border-verge-accent">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="text-xs text-verge-text-secondary tracking-widest font-heading uppercase">04</div>
+                                <div class="w-2 h-2 rounded-full bg-verge-border group-hover:bg-verge-accent group-hover:shadow-[0_0_8px_rgba(0,217,166,0.5)] transition-all"></div>
+                            </div>
+                            <h3 class="font-heading text-xl font-bold mb-4 text-verge-text">Digital Marketing</h3>
+                            <div class="service-text text-sm mb-6 leading-relaxed text-verge-text-secondary group-hover:text-verge-text">
+                                Content and campaign strategies to turn attention into opportunities.
+                            </div>
+                            <div class="service-data-line mb-6"></div>
+                        </div>
+                        <div class="flex justify-end">
+                            <span class="text-xs font-heading text-verge-accent opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Explore →</span>
+                        </div>
+                    </article>
+
+                    <!-- Service 05 -->
+                    <article class="card-module reveal delay-200 flex flex-col justify-between h-full group hover:border-verge-accent">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="text-xs text-verge-text-secondary tracking-widest font-heading uppercase">05</div>
+                                <div class="w-2 h-2 rounded-full bg-verge-border group-hover:bg-verge-accent group-hover:shadow-[0_0_8px_rgba(0,217,166,0.5)] transition-all"></div>
+                            </div>
+                            <h3 class="font-heading text-xl font-bold mb-4 text-verge-text">Conversion Systems</h3>
+                            <div class="service-text text-sm mb-6 leading-relaxed text-verge-text-secondary group-hover:text-verge-text">
+                                Remove friction with optimized landing pages and seamless quote flows.
+                            </div>
+                            <div class="service-data-line mb-6"></div>
+                        </div>
+                        <div class="flex justify-end">
+                            <span class="text-xs font-heading text-verge-accent opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Explore →</span>
+                        </div>
+                    </article>
+
+                    <!-- Service 06 -->
+                    <article class="card-module reveal delay-300 flex flex-col justify-between h-full group hover:border-verge-accent">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="text-xs text-verge-text-secondary tracking-widest font-heading uppercase">06</div>
+                                <div class="w-2 h-2 rounded-full bg-verge-border group-hover:bg-verge-accent group-hover:shadow-[0_0_8px_rgba(0,217,166,0.5)] transition-all"></div>
+                            </div>
+                            <h3 class="font-heading text-xl font-bold mb-4 text-verge-text">Content & Authority</h3>
+                            <div class="service-text text-sm mb-6 leading-relaxed text-verge-text-secondary group-hover:text-verge-text">
+                                Give customers and systems more reasons to trust your expertise.
+                            </div>
+                            <div class="service-data-line mb-6"></div>
+                        </div>
+                        <div class="flex justify-end">
+                            <span class="text-xs font-heading text-verge-accent opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Explore →</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTELLIGENCE TO IMPLEMENTATION TRANSITION -->
+        <section class="py-24 border-b border-verge-border bg-verge-background relative overflow-hidden">
+            <div class="bg-atmosphere bg-atmosphere-2 opacity-50"></div>
+            
+            <div class="max-w-5xl mx-auto px-6 reveal">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
+                    <div class="floating-card flex flex-col items-center justify-center w-48 h-32 hover:border-verge-accent">
+                        <div class="text-[10px] text-verge-text-secondary font-heading uppercase tracking-widest mb-2">ordigit identifies:</div>
+                        <div class="text-verge-accent font-bold text-sm">LOCAL VISIBILITY GAP</div>
+                    </div>
+                    
+                    <div class="text-verge-border text-2xl rotate-90 md:rotate-0">→</div>
+                    
+                    <div class="floating-card flex flex-col items-center justify-center bg-verge-surface border-verge-border w-48 h-32 hover:border-verge-accent">
+                        <div class="text-[10px] text-verge-text-secondary font-heading uppercase tracking-widest mb-2">VERGE SERVICE:</div>
+                        <div class="text-verge-text font-bold text-sm">LOCAL VISIBILITY</div>
+                    </div>
+                    
+                    <div class="text-verge-accent-soft text-2xl rotate-90 md:rotate-0">→</div>
+                    
+                    <div class="floating-card flex flex-col items-center justify-center bg-verge-accent border-verge-accent text-verge-background w-48 h-32 shadow-[0_0_20px_rgba(0,217,166,0.16)] hover:bg-verge-mint">
+                        <div class="text-[10px] opacity-70 font-heading uppercase tracking-widest mb-2 text-verge-background">ACTION:</div>
+                        <div class="font-bold text-sm text-verge-background">OPTIMIZE PRESENCE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THE VERGE METHOD -->
+        <section class="py-24 border-b border-verge-border bg-verge-background relative">
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <h2 class="heading-md text-center mb-24 reveal text-verge-text">The VERGE method</h2>
+                
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center relative gap-8 reveal delay-100 group">
+                    
+                    <div class="hidden md:block absolute top-[20%] left-0 w-full h-[1px] bg-verge-border -z-10 group-hover:bg-verge-accent-soft transition-colors">
+                         <div class="signal-pulse h-[1px] w-[80px] top-0 opacity-0 group-hover:opacity-100 transition-opacity delay-200" style="animation: pulse-horizontal 6s infinite linear"></div>
+                    </div>
+                    
+                    <div class="bg-verge-background md:px-4 flex-1 hover:text-verge-text transition-colors cursor-default group/step">
+                        <div class="text-verge-text-secondary font-heading text-sm mb-2 group-hover/step:text-verge-accent transition-colors flex items-center gap-2">
+                            01 <span class="w-1.5 h-1.5 bg-verge-accent rounded-full opacity-0 group-hover/step:opacity-100 transition-opacity shadow-[0_0_8px_rgba(0,217,166,0.3)]"></span>
+                        </div>
+                        <h4 class="font-bold text-lg text-verge-text group-hover/step:text-verge-mint transition-colors">DISCOVER</h4>
+                        <p class="text-xs text-verge-text-secondary mt-2 leading-relaxed">Understand the business, audience, presence and gaps.</p>
+                    </div>
+                    
+                    <div class="bg-verge-background md:px-4 flex-1 hover:text-verge-text transition-colors cursor-default group/step">
+                        <div class="text-verge-text-secondary font-heading text-sm mb-2 group-hover/step:text-verge-accent transition-colors flex items-center gap-2">
+                            02 <span class="w-1.5 h-1.5 bg-verge-accent rounded-full opacity-0 group-hover/step:opacity-100 transition-opacity shadow-[0_0_8px_rgba(0,217,166,0.3)]"></span>
+                        </div>
+                        <h4 class="font-bold text-lg text-verge-text group-hover/step:text-verge-mint transition-colors">DEFINE</h4>
+                        <p class="text-xs text-verge-text-secondary mt-2 leading-relaxed">Clarify positioning, messaging and intent.</p>
+                    </div>
+                    
+                    <div class="bg-verge-background md:px-4 flex-1 hover:text-verge-text transition-colors cursor-default group/step">
+                        <div class="text-verge-text-secondary font-heading text-sm mb-2 group-hover/step:text-verge-accent transition-colors flex items-center gap-2">
+                            03 <span class="w-1.5 h-1.5 bg-verge-accent rounded-full opacity-0 group-hover/step:opacity-100 transition-opacity shadow-[0_0_8px_rgba(0,217,166,0.3)]"></span>
+                        </div>
+                        <h4 class="font-bold text-lg text-verge-text group-hover/step:text-verge-mint transition-colors">BUILD</h4>
+                        <p class="text-xs text-verge-text-secondary mt-2 leading-relaxed">Create the brand, website and infrastructure.</p>
+                    </div>
+                    
+                    <div class="bg-verge-background md:px-4 flex-1 hover:text-verge-text transition-colors cursor-default group/step">
+                        <div class="text-verge-text-secondary font-heading text-sm mb-2 group-hover/step:text-verge-accent transition-colors flex items-center gap-2">
+                            04 <span class="w-1.5 h-1.5 bg-verge-accent rounded-full opacity-0 group-hover/step:opacity-100 transition-opacity shadow-[0_0_8px_rgba(0,217,166,0.3)]"></span>
+                        </div>
+                        <h4 class="font-bold text-lg text-verge-text group-hover/step:text-verge-mint transition-colors">AMPLIFY</h4>
+                        <p class="text-xs text-verge-text-secondary mt-2 leading-relaxed">Deploy content, search and social systems.</p>
+                    </div>
+                    
+                    <div class="bg-verge-background md:px-4 flex-1 hover:text-verge-text transition-colors cursor-default group/step">
+                        <div class="text-verge-text-secondary font-heading text-sm mb-2 group-hover/step:text-verge-accent transition-colors flex items-center gap-2">
+                            05 <span class="w-1.5 h-1.5 bg-verge-accent rounded-full opacity-0 group-hover/step:opacity-100 transition-opacity shadow-[0_0_8px_rgba(0,217,166,0.3)]"></span>
+                        </div>
+                        <h4 class="font-bold text-lg text-verge-text group-hover/step:text-verge-mint transition-colors">OPTIMIZE</h4>
+                        <p class="text-xs text-verge-text-secondary mt-2 leading-relaxed">Measure signals, conversion and continuously improve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INDUSTRY FOCUS -->
+        <section id="industries" class="section-padding bg-verge-background relative">
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-16 relative z-10">
+                <div class="lg:col-span-1 reveal">
+                    <h2 class="heading-lg mb-6 text-verge-text">Designed for growth.</h2>
+                    <p class="text-body-lg text-verge-text-secondary">While we partner with a wide range of organizations, our systems are especially powerful for businesses where trust, local visibility, and clarity drive conversion.</p>
+                    
+                    <!-- Digital Fragment -->
+                    <div class="mt-8 floating-card inline-block text-[10px] text-verge-text-secondary font-heading uppercase tracking-widest bg-verge-surface">
+                        <span class="text-verge-accent font-bold mr-1">LOCAL SIGNAL</span> DETECTED
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 grid sm:grid-cols-2 gap-4 reveal delay-100">
+                    <div class="card-module p-6 bg-verge-surface hover:border-verge-accent transition-all group">
+                        <h4 class="font-bold font-heading mb-2 text-lg text-verge-text group-hover:text-verge-accent transition-colors">Roofing & Contractors</h4>
+                        <p class="text-sm text-verge-text-secondary">"Turn local visibility into qualified project opportunities."</p>
+                    </div>
+                    <div class="card-module p-6 bg-verge-surface hover:border-verge-accent transition-all group">
+                        <h4 class="font-bold font-heading mb-2 text-lg text-verge-text group-hover:text-verge-accent transition-colors">Real Estate</h4>
+                        <p class="text-sm text-verge-text-secondary">"Build trust before the first conversation."</p>
+                    </div>
+                    <div class="card-module p-6 bg-verge-surface hover:border-verge-accent transition-all group">
+                        <h4 class="font-bold font-heading mb-2 text-lg text-verge-text group-hover:text-verge-accent transition-colors">Professional Services</h4>
+                        <p class="text-sm text-verge-text-secondary">"Make expertise easier to discover and understand."</p>
+                    </div>
+                    <div class="card-module p-6 bg-verge-surface hover:border-verge-accent transition-all group">
+                        <h4 class="font-bold font-heading mb-2 text-lg text-verge-text group-hover:text-verge-accent transition-colors">Tech & SaaS</h4>
+                        <p class="text-sm text-verge-text-secondary">"Clarify complex products and turn attention into adoption."</p>
+                    </div>
+                    <div class="card-module p-6 bg-verge-surface hover:border-verge-accent transition-all group">
+                        <h4 class="font-bold font-heading mb-2 text-lg text-verge-text group-hover:text-verge-accent transition-colors">Creators & Personal Brands</h4>
+                        <p class="text-sm text-verge-text-secondary">"Turn a personal brand into a scalable digital asset."</p>
+                    </div>
+                    <div class="card-module p-6 bg-verge-surface hover:border-verge-accent transition-all group">
+                        <h4 class="font-bold font-heading mb-2 text-lg text-verge-text group-hover:text-verge-accent transition-colors">Clinics / Local Services</h4>
+                        <p class="text-sm text-verge-text-secondary">"Build trust and make the next step easier."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROGRESSIVE INTELLIGENCE MODEL -->
+        <section id="ordigit-depth" class="section-padding border-t border-verge-border bg-verge-background relative">
+            <div class="absolute inset-0 z-0 bg-grid bg-[size:4rem_4rem] opacity-20 pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+                <h2 class="heading-lg mb-4 reveal text-verge-text">How deep should we go?</h2>
+                <p class="text-body-lg mb-16 reveal delay-100 text-verge-text-secondary">Start with what we can see. Go deeper when you need more.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal delay-200">
+                    <!-- FREE -->
+                    <div class="card-module bg-verge-surface text-left group hover:border-verge-accent">
+                        <div class="text-verge-text-secondary font-bold mb-4 text-sm tracking-widest group-hover:text-verge-accent transition-colors">FREE</div>
+                        <h4 class="font-heading text-lg mb-4 text-verge-text">Visibility Snapshot</h4>
+                        <p class="text-xs text-verge-text-secondary mb-6">"What does ordigit see?"</p>
+                        <!-- Intelligence Preview (Hidden until hover on desktop) -->
+                        <div class="h-10">
+                            <div class="floating-card text-[10px] p-2 bg-verge-surface opacity-50 group-hover:opacity-100 group-hover:-translate-y-2 transition-all">Basic Signals</div>
+                        </div>
+                    </div>
+                    <!-- $10 -->
+                    <div class="card-module bg-verge-surface text-left group hover:border-verge-accent">
+                        <div class="text-verge-text-secondary font-bold mb-4 text-sm tracking-widest group-hover:text-verge-accent transition-colors">$10</div>
+                        <h4 class="font-heading text-lg mb-4 text-verge-text">Essential Intelligence</h4>
+                        <p class="text-xs text-verge-text-secondary mb-6">"Why did ordigit find this?"</p>
+                        <div class="h-10 relative">
+                            <div class="floating-card text-[10px] p-2 bg-verge-surface absolute opacity-50 group-hover:opacity-100 group-hover:-translate-y-2 transition-all">Gap Analysis</div>
+                            <div class="floating-card text-[10px] p-2 bg-verge-surface absolute left-6 top-2 opacity-30 group-hover:opacity-80 group-hover:-translate-y-1 transition-all delay-75">Trust Metrics</div>
+                        </div>
+                    </div>
+                    <!-- $25 -->
+                    <div class="card-module bg-verge-surface text-left group hover:border-verge-accent-soft">
+                        <div class="text-verge-mint font-bold mb-4 text-sm tracking-widest group-hover:text-verge-accent transition-colors">$25</div>
+                        <h4 class="font-heading text-lg mb-4 text-verge-text">Growth Intelligence</h4>
+                        <p class="text-xs text-verge-text-secondary mb-6">"Where are my biggest opportunities?"</p>
+                        <div class="h-10 relative">
+                            <div class="floating-card text-[10px] p-2 bg-verge-surface absolute opacity-60 group-hover:opacity-100 group-hover:-translate-y-2 transition-all group-hover:border-verge-accent/30">Intent Mapping</div>
+                            <div class="floating-card text-[10px] p-2 bg-verge-surface absolute left-6 top-2 opacity-40 group-hover:opacity-80 group-hover:-translate-y-1 transition-all delay-75 group-hover:border-verge-accent/20">AI Visibility</div>
+                        </div>
+                    </div>
+                    <!-- $50 -->
+                    <div class="card-module bg-verge-surface text-left group hover:border-verge-accent shadow-lg">
+                        <!-- Structural header detail -->
+                        <div class="absolute top-0 left-0 w-full h-[2px] bg-verge-accent opacity-30 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="text-verge-accent font-bold mb-4 text-sm tracking-widest flex items-center gap-2">
+                            $50 <span class="w-1.5 h-1.5 bg-verge-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-[0_0_8px_rgba(0,217,166,0.3)]"></span>
+                        </div>
+                        <h4 class="font-heading text-lg mb-4 text-verge-text">Authority Intelligence</h4>
+                        <p class="text-xs text-verge-text-secondary mb-6">"How do I build a stronger long-term position?"</p>
+                        <div class="h-10 relative">
+                            <div class="floating-card text-[10px] p-2 bg-verge-surface absolute opacity-100 -translate-y-2 transition-all border-verge-accent shadow-[0_0_15px_rgba(0,217,166,0.15)] text-verge-accent">Full System Architecture</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE DEMO -->
+        <section id="scan" class="section-padding bg-verge-background border-t border-verge-border relative overflow-hidden">
+            <div class="bg-atmosphere bg-atmosphere-1"></div>
+            
+            <div class="max-w-3xl mx-auto px-6 text-center relative z-10 reveal">
+                <h2 class="heading-md mb-4 text-verge-text font-heading">What would we find about your business?</h2>
+                <p class="text-body-lg mb-10 text-verge-text-secondary">See how your business currently appears across the digital ecosystem.</p>
+                
+                <form id="ordigit-demo-form" class="floating-card p-10 text-left bg-verge-surface border-verge-border mx-auto hover:border-verge-accent">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <label class="block text-[10px] font-heading text-verge-text-secondary mb-2 uppercase tracking-widest">Business Name</label>
+                            <input type="text" required class="w-full bg-verge-background border border-verge-border p-3 text-sm focus:border-verge-accent focus:outline-none transition-colors text-verge-text rounded" placeholder="e.g. Apex Roofing">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-heading text-verge-text-secondary mb-2 uppercase tracking-widest">Website</label>
+                            <input type="url" class="w-full bg-verge-background border border-verge-border p-3 text-sm focus:border-verge-accent focus:outline-none transition-colors text-verge-text rounded" placeholder="e.g. apexroofing.com">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-heading text-verge-text-secondary mb-2 uppercase tracking-widest">Industry</label>
+                            <input type="text" required class="w-full bg-verge-background border border-verge-border p-3 text-sm focus:border-verge-accent focus:outline-none transition-colors text-verge-text rounded" placeholder="e.g. Construction">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-heading text-verge-text-secondary mb-2 uppercase tracking-widest">Location</label>
+                            <input type="text" required class="w-full bg-verge-background border border-verge-border p-3 text-sm focus:border-verge-accent focus:outline-none transition-colors text-verge-text rounded" placeholder="e.g. Chicago, IL">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary w-full text-sm">RUN DIGITAL INVESTIGATION</button>
+                </form>
+                
+                <div id="ordigit-demo-result" class="hidden floating-card p-10 text-center bg-verge-surface border-verge-accent mx-auto shadow-[0_0_20px_rgba(0,217,166,0.16)]">
+                    <h3 class="text-xl font-heading text-verge-text mb-4 flex items-center justify-center gap-3">
+                        <div class="w-3 h-3 bg-verge-accent rounded-full animate-pulse shadow-[0_0_10px_rgba(0,217,166,0.5)]"></div>
+                        Intelligence Scan Initiated
+                    </h3>
+                    <p class="text-sm text-verge-text-secondary mb-8">ordigit is processing the public digital evidence for your business. Our team will contact you with the intelligence snapshot.</p>
+                    <button onclick="document.getElementById('ordigit-demo-form').style.display='block'; document.getElementById('ordigit-demo-result').classList.add('hidden');" class="text-xs text-verge-text-secondary hover:text-verge-text transition-colors font-heading tracking-widest uppercase">Restart Investigation</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOUNDER & CONSULTATION -->
+        <section id="about" class="section-padding border-t border-verge-border bg-verge-background">
+            <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <h2 class="heading-lg mb-6 text-verge-text">Found the gap?<br>Let's build the fix.</h2>
+                    <p class="text-body-lg mb-8 text-verge-text-secondary">
+                        Technology can identify the opportunity. Strategy and execution turn it into a business asset.
+                    </p>
+                    <a href="#contact" class="btn-primary mb-16">Book a Strategy Session</a>
+                    
+                    <div class="border-t border-verge-border pt-8 relative">
+                        <!-- Structural corner detail -->
+                        <div class="absolute top-0 left-0 w-4 h-[2px] bg-verge-accent opacity-30"></div>
+                        
+                        <h4 class="font-heading text-xs text-verge-text-secondary mb-4 uppercase tracking-widest">Built at the intersection of design, technology and business growth.</h4>
+                        <p class="text-lg font-light text-verge-text leading-relaxed opacity-90">"I believe a business website should be more than a digital brochure. It should help the right people understand what you do, trust why you matter, and take the next step."</p>
+                        <div class="mt-8 flex items-center gap-2">
+                            <a href="#contact" class="text-sm font-bold text-verge-text hover:text-verge-accent transition-colors tracking-widest uppercase font-heading">Work With VERGE</a>
+                            <span class="text-verge-accent">→</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="aspect-[3/4] bg-verge-background border border-verge-border rounded-lg relative reveal delay-200 flex flex-col items-center justify-center p-4 overflow-hidden shadow-2xl group hover:border-verge-accent transition-all">
+                     <div class="absolute inset-0 bg-grid bg-[size:1rem_1rem] opacity-20"></div>
+                     <div class="absolute inset-0 bg-gradient-to-t from-verge-background to-transparent opacity-80"></div>
+                     
+                     <div class="floating-card bg-verge-surface/80 backdrop-blur-md px-4 py-2 text-center group-hover:border-verge-accent transition-colors">
+                        <span class="text-verge-text-secondary text-[10px] font-heading uppercase tracking-widest">[ Founder Asset Profile ]</span>
+                     </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ -->
+        <section class="section-padding border-t border-verge-border bg-verge-background">
+            <div class="max-w-3xl mx-auto px-6 reveal">
+                <h2 class="heading-md mb-10 text-center text-verge-text">Frequently Asked Questions</h2>
+                
+                <div class="space-y-4">
+                    <div class="faq-item border border-verge-border bg-verge-surface transition-all hover:border-verge-accent rounded overflow-hidden">
+                        <button class="faq-question w-full text-left px-6 py-4 font-heading font-medium flex justify-between items-center text-verge-text transition-colors">
+                            What does VERGE do?
+                            <span class="faq-icon text-xl text-verge-text-secondary">+</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-sm text-verge-text-secondary leading-relaxed">
+                            VERGE combines strategy, brand, web, visibility and intelligent digital systems to help businesses compete in a world where customers increasingly discover businesses through search, platforms and AI-powered systems.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item border border-verge-border bg-verge-surface transition-all hover:border-verge-accent rounded overflow-hidden">
+                        <button class="faq-question w-full text-left px-6 py-4 font-heading font-medium flex justify-between items-center text-verge-text transition-colors">
+                            What is ordigit?
+                            <span class="faq-icon text-xl text-verge-text-secondary">+</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-sm text-verge-text-secondary leading-relaxed">
+                            ordigit is our flagship Business Visibility Intelligence platform. It investigates the public digital evidence surrounding your business to show you how clearly you are being understood, discovered and trusted.
+                        </div>
+                    </div>
+
+                    <div class="faq-item border border-verge-border bg-verge-surface transition-all hover:border-verge-accent rounded overflow-hidden">
+                        <button class="faq-question w-full text-left px-6 py-4 font-heading font-medium flex justify-between items-center text-verge-text transition-colors">
+                            Is ordigit an SEO tool?
+                            <span class="faq-icon text-xl text-verge-text-secondary">+</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-sm text-verge-text-secondary leading-relaxed">
+                            No, it is a broader business visibility intelligence platform. While it includes search presence, it also analyzes AI readiness, brand clarity, trust signals, and customer intent.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item border border-verge-border bg-verge-surface transition-all hover:border-verge-accent rounded overflow-hidden">
+                        <button class="faq-question w-full text-left px-6 py-4 font-heading font-medium flex justify-between items-center text-verge-text transition-colors">
+                            How does the free scan work?
+                            <span class="faq-icon text-xl text-verge-text-secondary">+</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-sm text-verge-text-secondary leading-relaxed">
+                            You provide basic business details, and ordigit runs a rapid analysis of your public digital footprint to generate a Visibility Snapshot outlining what modern discovery systems see.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item border border-verge-border bg-verge-surface transition-all hover:border-verge-accent rounded overflow-hidden">
+                        <button class="faq-question w-full text-left px-6 py-4 font-heading font-medium flex justify-between items-center text-verge-text transition-colors">
+                            Can VERGE build what ordigit recommends?
+                            <span class="faq-icon text-xl text-verge-text-secondary">+</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-sm text-verge-text-secondary leading-relaxed">
+                            Yes. That is the core of our model. ordigit identifies the gaps in your digital foundation, and VERGE has the expertise to architect, design, and build the solutions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="contact" class="bg-verge-background border-t border-verge-border pt-20 pb-10">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                    <div class="col-span-1">
+                        <h3 class="font-heading font-bold text-2xl mb-2 text-verge-text flex items-center gap-2">
+                            VERGE
+                            <span class="w-1.5 h-1.5 bg-verge-accent rounded-full shadow-[0_0_8px_rgba(0,217,166,0.3)]"></span>
+                        </h3>
+                        <p class="text-sm text-verge-text-secondary mb-6">Digital Growth + Intelligence</p>
+                        <a href="https://wa.me/1234567890?text=Hi%20VERGE%2C%20I'd%20like%20to%20discuss%20improving%20my%20business's%20digital%20presence." target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-medium border border-verge-border px-4 py-2 hover:border-verge-accent hover:text-verge-mint hover:bg-verge-surface transition-all text-verge-text rounded">
+                            Talk to VERGE
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-xs mb-4 text-verge-text font-heading tracking-widest uppercase">Services</h4>
+                        <ul class="space-y-2 text-sm text-verge-text-secondary">
+                            <li><a href="#services" class="hover:text-verge-accent transition-colors">Brand</a></li>
+                            <li><a href="#services" class="hover:text-verge-accent transition-colors">Web</a></li>
+                            <li><a href="#services" class="hover:text-verge-accent transition-colors">Visibility</a></li>
+                            <li><a href="#services" class="hover:text-verge-accent transition-colors">Marketing</a></li>
+                            <li><a href="#services" class="hover:text-verge-accent transition-colors">Content</a></li>
+                            <li><a href="#services" class="hover:text-verge-accent transition-colors">Conversion</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-xs mb-4 text-verge-text font-heading tracking-widest uppercase">Industries</h4>
+                        <ul class="space-y-2 text-sm text-verge-text-secondary">
+                            <li><a href="#industries" class="hover:text-verge-accent transition-colors">Roofing & Contractors</a></li>
+                            <li><a href="#industries" class="hover:text-verge-accent transition-colors">Real Estate</a></li>
+                            <li><a href="#industries" class="hover:text-verge-accent transition-colors">Professional Services</a></li>
+                            <li><a href="#industries" class="hover:text-verge-accent transition-colors">Tech & SaaS</a></li>
+                            <li><a href="#industries" class="hover:text-verge-accent transition-colors">Creators</a></li>
+                            <li><a href="#industries" class="hover:text-verge-accent transition-colors">Local Services</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-xs mb-4 text-verge-text font-heading tracking-widest uppercase">Company</h4>
+                        <ul class="space-y-2 text-sm text-verge-text-secondary">
+                            <li><a href="#about" class="hover:text-verge-accent transition-colors">About</a></li>
+                            <li><a href="#work" class="hover:text-verge-accent transition-colors">Work</a></li>
+                            <li><a href="#ordigit" class="hover:text-verge-accent transition-colors">ordigit Product</a></li>
+                            <li><a href="mailto:hello@vergedigital.com" class="hover:text-verge-accent transition-colors">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="border-t border-verge-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-verge-text-secondary">
+                    <p>&copy; 2026 VERGE. All rights reserved.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-verge-text transition-colors">Privacy</a>
+                        <a href="#" class="hover:text-verge-text transition-colors">Terms</a>
+                        <a href="/llms.txt" class="hover:text-verge-text transition-colors">AI Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
